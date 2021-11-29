@@ -1,0 +1,890 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: gray;
+    position: relative;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+}
+li img{
+    width: 80px;
+}
+li{
+    list-style: none;
+    padding: 20px;
+    font-size: 18px;
+    color: rgb(240, 234, 234);
+}
+.list{
+    border: 1px solid transparent;
+    transition: 0.4s;
+}
+@font-face {
+    font-family: txt;
+    src: url(FredokaOne-Regular.ttf);
+}
+.list:hover{
+    color: pink;
+    border-bottom: 1px solid  black;
+}
+
+.triangle-down {
+	width: 0;
+	height: 0;
+	border-left: 40px solid transparent;
+	border-right: 40px solid transparent;
+	border-top: 50px solid gray;
+    position: relative;
+    margin: auto;
+}
+
+#top{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    font-family: txt;
+    font-size: 40px;
+}
+.cillian{
+    padding: 10px;
+}
+.paul{
+    padding: 10px;
+}
+.helen{
+    padding: 10px;
+}
+.finn{
+    padding: 10px;
+}
+.cillian img{
+    width: 300px;
+    height: 200px;
+}
+.paul img{
+    width: 300px;
+    height: 200px;
+}
+.helen img{
+    width: 300px;
+    height: 200px;
+}
+.finn img{
+    width: 300px;
+    height: 200px;
+}
+.cast{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.cillian_txt{
+    width: 300px;
+    background-color: gray;
+    position: relative;
+    top: -48px;
+    color: white;
+    text-align: center;
+    transition: 1s;
+    opacity: 0;
+}
+.paul_txt{
+    width: 300px;
+    background-color: gray;
+    position: relative;
+    top: -48px;
+    color: white;
+    text-align: center;
+    transition: 1s;
+    opacity: 0;
+}
+.helen_txt{
+    width: 300px;
+    background-color: gray;
+    position: relative;
+    top: -48px;
+    color: white;
+    text-align: center;
+    transition: 1s;
+    opacity: 0;
+}
+.finn_txt{
+    width: 300px;
+    background-color: gray;
+    position: relative;
+    top: -48px;
+    color: white;
+    text-align: center;
+    transition: 1s;
+    opacity: 0;
+}
+
+.cillian:hover .cillian_txt{
+    opacity: 1;
+}
+
+.paul:hover .paul_txt{
+    opacity: 1;
+}
+
+.helen:hover .helen_txt{
+    opacity: 1;
+}
+
+.finn:hover .finn_txt{
+    opacity: 1;
+}
+
+.story{
+    background-color: gray;
+}
+.story h1{
+    font-family: txt;
+    text-align: center;
+    padding-top: 40px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.story_two{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.story_third{
+    width: 60%;
+}
+.story_third p{
+    padding-bottom: 60px;
+}
+.story_second img{
+    width: 650px;
+    padding-bottom: 90px;
+}
+.all_characters_one{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 60px;
+}
+.characters h1{
+    text-align: center;
+    margin-bottom: 90px;
+    margin-top: 30px;
+    font-family: txt;
+}
+.thomas{
+    width: 30%;
+    height: 300px;
+    background-image: linear-gradient(gray, rgb(221, 215, 215), gray);
+    text-align: center;
+    margin-bottom: 30px;
+}
+.thomas img{
+    width: 300px;
+    transition: 0.8s;
+}
+.thomas p{
+    position: relative;
+    top: -320px;
+    width: 70%;
+    margin: auto;
+    left: -40px;
+    opacity: 0;
+    transition: 1s;
+}
+
+.thomas:hover img{
+    transform: translateX(55%);
+    transition: 0.8s;
+}
+
+.thomas:hover p{
+    opacity: 1;
+    top: -280px;
+    left: -40px;
+    transition: 1s;
+}
+.all_characters_two{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 60px;
+}
+.arthur{
+    width: 30%;
+    height: 300px;
+    background-image: linear-gradient(gray, rgb(221, 215, 215), gray);
+    text-align: center;
+    margin-bottom: 30px;
+}
+.arthur img{
+    width: 245px;
+    transition: 0.8s;
+}
+.arthur p{
+    position: relative;
+    top: -380px;
+    width: 70%;
+    margin: auto;
+    left: -40px;
+    opacity: 0;
+    transition: 1s;
+}
+
+.arthur:hover img{
+    transform: translateX(70%);
+    transition: 0.8s;
+}
+
+.arthur:hover p{
+    opacity: 1;
+    top: -280px;
+    left: -40px;
+    transition: 1s;
+}
+
+.john{
+    width: 30%;
+    height: 300px;
+    background-image: linear-gradient(gray, rgb(221, 215, 215), gray);
+    text-align: center;
+    margin-bottom: 30px;
+}
+.john img{
+    width: 300px;
+    transition: 0.8s;
+}
+.john p{
+    position: relative;
+    top: -380px;
+    width: 70%;
+    margin: auto;
+    left: -40px;
+    opacity: 0;
+    transition: 1s;
+}
+
+.john:hover img{
+    transform: translateX(55%);
+    transition: 0.8s;
+}
+
+.john:hover p{
+    opacity: 1;
+    top: -280px;
+    left: -40px;
+    transition: 1s;
+}
+.polly{
+    width: 30%;
+    height: 300px;
+    background-image: linear-gradient(gray, rgb(221, 215, 215), gray);
+    text-align: center;
+    margin-bottom: 30px;
+}
+.polly img{
+    width: 315px;
+    transition: 0.8s;
+}
+.polly p{
+    position: relative;
+    top: -380px;
+    width: 70%;
+    margin: auto;
+    left: -40px;
+    opacity: 0;
+    transition: 1s;
+}
+
+.polly:hover img{
+    transform: translateX(55%);
+    transition: 0.8s;
+}
+
+.polly:hover p{
+    opacity: 1;
+    top: -280px;
+    left: -40px;
+    transition: 1s;
+}
+
+.all_characters_three{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 60px;
+}
+
+.finn_s{
+    width: 30%;
+    height: 300px;
+    background-image: linear-gradient(gray, rgb(221, 215, 215), gray);
+    text-align: center;
+    margin-bottom: 30px;
+}
+.finn_s img{
+    width: 200px;
+    height: 300px;
+    transition: 0.8s;
+}
+.finn_s p{
+    position: relative;
+    top: -380px;
+    width: 70%;
+    margin: auto;
+    left: -40px;
+    opacity: 0;
+    transition: 1s;
+}
+
+.finn_s:hover img{
+    transform: translateX(75%);
+    transition: 0.8s;
+}
+
+.finn_s:hover p{
+    opacity: 1;
+    top: -280px;
+    left: -40px;
+    transition: 1s;
+}
+
+.michael{
+    width: 30%;
+    height: 300px;
+    background-image: linear-gradient(gray, rgb(221, 215, 215), gray);
+    text-align: center;
+    margin-bottom: 30px;
+}
+.michael img{
+    width: 300px;
+    transition: 0.8s;
+}
+.michael p{
+    position: relative;
+    top: -380px;
+    width: 70%;
+    margin: auto;
+    left: -40px;
+    opacity: 0;
+    transition: 1s;
+}
+
+.michael:hover img{
+    transform: translateX(55%);
+    transition: 0.8s;
+}
+
+.michael:hover p{
+    opacity: 1;
+    top: -280px;
+    left: -40px;
+    transition: 1s;
+}
+
+.all_characters_four{
+    display: flex;
+    justify-content: center;
+}
+
+.ada{
+    width: 30%;
+    height: 300px;
+    background-image: linear-gradient(gray, rgb(221, 215, 215), gray);
+    text-align: center;
+    margin-bottom: 30px;
+}
+.ada img{
+    width: 240px;
+    transition: 0.8s;
+}
+.ada p{
+    position: relative;
+    top: -380px;
+    width: 70%;
+    margin: auto;
+    left: -40px;
+    opacity: 0;
+    transition: 1s;
+}
+
+.ada:hover img{
+    transform: translateX(75%);
+    transition: 0.8s;
+}
+
+.ada:hover p{
+    opacity: 1;
+    top: -280px;
+    left: -40px;
+    transition: 1s;
+}
+.villians{
+    background-color: #122936;
+}
+.villians h1{
+    text-align: center;
+    margin-top: 90px;
+    padding-top: 30px;
+    color: white;
+    font-family: txt;
+}
+.all_villians_first{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 60px;
+}
+.campbell{
+    width: 30%;
+    height: 300px;
+    background-image: linear-gradient(darkgray, lightgray, darkgray);
+    text-align: center;
+    margin-bottom: 30px;
+}
+.campbell img{
+    width: 200px;
+    transition: 0.8s;
+}
+.campbell p{
+    position: relative;
+    top: -380px;
+    width: 70%;
+    margin: auto;
+    left: -40px;
+    opacity: 0;
+    transition: 1s;
+}
+
+.campbell:hover img{
+    transform: translateX(75%);
+    transition: 0.8s;
+}
+
+.campbell:hover p{
+    opacity: 1;
+    top: -280px;
+    left: -40px;
+    transition: 1s;
+}
+
+.sabini{
+    width: 30%;
+    height: 300px;
+    background-image: linear-gradient(darkgray, lightgray, darkgray);
+    text-align: center;
+    margin-bottom: 30px;
+}
+.sabini img{
+    width: 200px;
+    transition: 0.8s;
+}
+.sabini p{
+    position: relative;
+    top: -380px;
+    width: 70%;
+    margin: auto;
+    left: -40px;
+    opacity: 0;
+    transition: 1s;
+}
+
+.sabini:hover img{
+    transform: translateX(75%);
+    transition: 0.8s;
+}
+
+.sabini:hover p{
+    opacity: 1;
+    top: -280px;
+    left: -40px;
+    transition: 1s;
+}
+.all_villians_second{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 60px;
+}
+.hughes{
+    width: 30%;
+    height: 300px;
+    background-image: linear-gradient(darkgray, lightgray, darkgray);
+    text-align: center;
+    margin-bottom: 30px;
+}
+.hughes img{
+    width: 220px;
+    transition: 0.8s;
+    text-align: center;
+}
+.hughes p{
+    position: relative;
+    top: -380px;
+    width: 70%;
+    margin: auto;
+    left: -40px;
+    opacity: 0;
+    transition: 1s;
+}
+
+.hughes:hover img{
+    transform: translateX(45%);
+    transition: 0.8s;
+}
+
+.hughes:hover p{
+    opacity: 1;
+    top: -280px;
+    left: -40px;
+    transition: 1s;
+}
+.changretta{
+    width: 30%;
+    height: 300px;
+    background-image: linear-gradient(darkgray, lightgray, darkgray);
+    text-align: center;
+    margin-bottom: 30px;
+}
+.changretta img{
+    width: 225px;
+    transition: 0.8s;
+}
+.changretta p{
+    position: relative;
+    top: -380px;
+    width: 70%;
+    margin: auto;
+    left: -40px;
+    opacity: 0;
+    transition: 1s;
+}
+
+.changretta:hover img{
+    transform: translateX(80%);
+    transition: 0.8s;
+}
+
+.changretta:hover p{
+    opacity: 1;
+    top: -280px;
+    left: -40px;
+    transition: 1s;
+}
+
+.all_villians_last{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 60px;
+}
+
+.mosley{
+    width: 30%;
+    height: 300px;
+    background-image: linear-gradient(darkgray, lightgray, darkgray);
+    text-align: center;
+    margin-bottom: 30px;
+}
+.mosley img{
+    width: 208px;
+    transition: 0.8s;
+}
+.mosley p{
+    position: relative;
+    top: -380px;
+    width: 70%;
+    margin: auto;
+    left: -40px;
+    opacity: 0;
+    transition: 1s;
+}
+
+.mosley:hover img{
+    transform: translateX(80%);
+    transition: 0.8s;
+}
+
+.mosley:hover p{
+    opacity: 1;
+    top: -280px;
+    left: -40px;
+    transition: 1s;
+}
+
+@media screen and (max-width: 1150px){
+    .story_two{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1050px){
+    .all_characters_one{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .all_characters_two{
+        flex-direction: column;
+    }
+    .all_characters_three{
+        flex-direction: column;
+    }
+    .all_characters_four{
+        flex-direction: column;
+    }
+    .all_villians_first{
+        flex-direction: column;
+    }
+    .all_villians_second{
+        flex-direction: column;
+    }
+    .thomas{
+        transform: translateX(50%);
+        width: 50%;
+    }
+    .arthur{
+        transform: translateX(50%);
+        width: 50%;
+    }
+    .john{
+        transform: translateX(50%);
+        width: 50%;
+    }
+    .polly{
+        transform: translateX(50%);
+        width: 50%;
+    }
+    .finn_s{
+        transform: translateX(50%);
+        width: 50%;
+    }
+    .michael{
+        transform: translateX(50%);
+        width: 50%;
+    }
+    .ada{
+        transform: translateX(50%);
+        width: 50%;
+    }
+    .campbell{
+        transform: translateX(50%);
+        width: 50%;
+    }
+    .sabini{
+        transform: translateX(50%);
+        width: 50%;
+    }
+    .hughes{
+        transform: translateX(50%);
+        width: 50%;
+    }
+    .changretta{
+        transform: translateX(50%);
+        width: 50%;
+    }
+    .mosley{
+        width: 50%;
+    }
+    
+}
+
+@media screen and (max-width: 650px){
+    .thomas{
+        width: 100%;
+        transform: translateX(0%);
+        overflow: hidden;
+    }
+    .arthur{
+        width: 100%;
+        transform: translateX(0%);  
+        overflow: hidden; 
+    }
+    .john{
+        width: 100%;
+        transform: translateX(0%);
+        overflow: hidden;
+    }
+    .polly{
+        width: 100%;
+        transform: translateX(0%);
+        overflow: hidden;
+    }
+    .finn_s{
+        width: 100%;
+        transform: translateX(0%);
+        overflow: hidden;
+    }
+    .michael{
+        width: 100%;
+        transform: translateX(0%);
+        overflow: hidden;
+    }
+    .ada{
+        width: 100%;
+        transform: translateX(0%);
+        overflow: hidden;
+    }
+    .campbell{
+        width: 100%;
+        transform: translateX(0%);
+        overflow: hidden;
+    }
+    .sabini{
+       width: 100%;
+       transform: translateX(0%);
+       overflow: hidden;
+    }
+    .hughes{
+        width: 100%;
+        transform: translateX(0%);
+        overflow: hidden;
+    }
+    .changretta{
+        width: 100%;
+        transform: translateX(0%);
+        overflow: hidden;
+    }
+    .mosley{
+        width: 100%;
+        overflow: hidden;
+    }
+    .cast{
+        flex-direction: column;
+        text-align: center;
+    }
+    .story_second img{
+        width: 90%;
+        text-align: center;
+    }
+    .cillian_txt{
+        margin: auto;
+    }
+    .paul_txt{
+        margin: auto;
+    }
+    .helen_txt{
+        margin: auto;
+    }
+    .finn_txt{
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 600px){
+    ul{
+        flex-direction: column;
+        margin: auto;
+    }
+    li{
+        padding: 5px;
+        padding-bottom: 10px;
+    }
+    .fmg{
+        display: none;
+    }
+}
+
+@media screen and (max-width:500px){
+    .story_two{
+        width: 100%;
+    }
+    .story_third p {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .cillian img{
+        width: 200px;
+        height: 100px;
+    }
+    .paul img{
+        width: 200px;
+        height: 100px;
+    }
+    .helen img{
+        width: 200px;
+        height: 100px;
+    }
+    .finn img{
+        width: 200px;
+        height: 100px;
+    }
+    .cillian_txt{
+        width: 200px;
+        top: -38px;
+    }
+    .cillian_txt h3{
+        font-size: 15px;
+    }
+    .paul_txt{
+        width: 200px;
+        top: -38px;
+    }
+    .paul_txt h3{
+        font-size: 15px;
+    }
+    .helen_txt{
+        width: 200px;
+        top: -38px;
+    }
+    .helen_txt h3{
+        font-size: 15px;
+    }
+    .finn_txt{
+        width: 200px;
+        top: -38px;
+    }
+    .finn_txt h3{
+        font-size: 15px;
+    }
+    
+}
+
+@media screen and (max-width:420px){
+    .john:hover img{
+        transform: translateX(40%);
+    }
+    .thomas:hover img{
+        transform: translateX(45%);
+    }
+    .arthur:hover img{
+        transform: translateX(55%);
+    }
+    .polly:hover img{
+        transform: translateX(40%);
+    }
+    .finn_s:hover img{
+        transform: translateX(60%);
+    }
+    .michael:hover img{
+        transform: translateX(45%);
+    }
+    .ada:hover img{
+        transform: translateX(50%);
+    }
+    .campbell:hover img{
+        transform: translateX(45%);
+    }
+    .sabini:hover img{
+        transform: translateX(45%);
+    }
+    .hughes:hover img{
+        transform: translateX(50%);
+    }
+    .changretta:hover img{
+        transform: translateX(60%);
+    }
+    .mosley:hover img{
+        transform: translateX(55%);
+    }
+}
